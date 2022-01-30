@@ -1,0 +1,32 @@
+npm init -y
+npm i bcrypt cloudinary concurrently cookie-parser cors dotenv express express-fileupload jsonwebtoken mongoose colors@1.4.0 nodemon
+controllers -userCtrl.js
+middleware -auth.js 
+models -userModel.js
+routers-userRoute.js
+server.js 
+"dev":"nodemon server.js"
+app.mvc
+app.connect
+download mongodb ,postmain,robo 3t
+Nodejs Snippets,Mongo Snippets for Node-js
+app.router
+!mdbgum
+//vậy là chúng ta đã hoàn thành xong phần backend tiếp đến sẽ là phần front-end
+//chúc cb tiếp tục phát huy
+
+npx create-react-app client
+cd client
+npm i react-router-dom axios react-paypal-express-checkout
+
+câu lệnh bắt đầu :
+cd client 
+npm start
+
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+.loading>.loader>div>div>div>div>div>div>div>div
+
+
+

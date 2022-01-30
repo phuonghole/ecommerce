@@ -1,0 +1,6 @@
+userCtrl thua dau _
+const accesstoken = createAccessToken({ id: user.id });
+package.json
+"server": "nodemon server.js --ignore client",
+Resgiter.js 
+đổi Resgister thành Login
