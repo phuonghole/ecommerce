@@ -45,7 +45,6 @@ const Header = () => {
   const styleMenu={
     left:menu?"0":"-100%",
   }
-  console.log(styleMenu)
   return (
     <header>
       <div className="menu" onClick={() =>setMenu(!menu)}>

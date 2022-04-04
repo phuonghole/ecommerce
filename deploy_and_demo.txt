@@ -1,0 +1,62 @@
+file server.js thêm
+const path=require("path")
+if(process.env.NODE_ENV === 'production'){
+  app.use(express.static("client/build"))
+  app.get("*",(req,res)=>{
+    res.sendFile(path.join(__dirname, 'client','build',"index.html"))
+  })
+}
+file package.json
+
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon server.js --ignore client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client-install": "cd client && npm install",
+    "server-install": "npm install",
+    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+tạo file 
+.gitignore (dùng để khi up file sẽ không có thư mục đó)
+
+node_modules
+
+https://www.mongodb.com/
+đăng nhập vào lấy đg dẫn URL thay vào file .env 
+
+https://github.com/
+New repository
+đặt tên bất kì -> create 
+
+chuột phải thư mục client -> cái thứ 3 -> thoát vscode 
+->view -> hiden item -> xóa thư mục .git 
+
+
+vào github 
+git init
+git add .
+(copy dòng 3->hết )
+git commit -m "first commit"
+git branch -M main
+git remote add origin ...
+git push -u origin main
+
+https://dashboard.heroku.com/
+new->create new  app ->ten->create app->github->ten_thumuc->search->connect ->deploy
+
+//demo and testing
+
+Đăng kí tài khoản mới ,thử cả nhập sai và nhập đúng
+Đăng nhập tài khoản  ,thử cả nhập sai và nhập đúng
+
+Đăng kí tài khoản mới và chuyển về quyền admin 
+Đăng nhập vào níck admin create category,delete category,update category
+create product,delete product,update product,delete all product 
+Thêm 10 sản phẩm ,Đăng xuất 
+Đăng nhập vào tài khoản user 
+
+Tìm kiếm theo tên sản phẩm,sắp xếp..,
+Xem chi tiết sản phẩm ,mua hàng, vào giỏ hàng xem tăng số lương,mua hàng ,thanh toàn bằng vnpay
+xem lịch sử mua,chi tiết lịch sử mua
+Thoát ra vào tài khoản admin xem Tất cả các đơn hàng,chi tiết đơn hàng .HẾT xong trang thương mại điện tử siêu cơ bản
