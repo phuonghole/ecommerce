@@ -1,7 +1,7 @@
 import React from "react";
 import { DataProvider } from "./GobalState";
-import Header from "./components/headers/Header"
-import Page from "./components/mainpage/Page.jsx"
+import Header from "./components/headers/Header";
+import Page from "./components/mainpage/Page.jsx";
 const App = () => {
   return (
     <DataProvider>
